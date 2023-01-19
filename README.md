@@ -1,5 +1,6 @@
 # Learning_to_diversify
 This is the modified code repository for ICCV2021 'Learning to Diversify for Single Domain Generalization'. 
+
 All Rights reserved to the original authors: https://github.com/BUserName/Learning_to_diversify
 Paper Link: http://arxiv.org/abs/2108.11726
 
@@ -8,18 +9,15 @@ Recently, we receive increasing enquiry about single DG on PACS with Resnet-18 B
 Please try hyperparameters lr=0.002 and e=50, to start your experiment. 
 
 We report the following single DG result on PACS, with resnet-18 as the backbone network:
-
-|Src. domain    | P       | A     | C     | S    |avg. |
-|---             | ------- |-------|-------| -----| --- |
-| Avg. Tar. Acc. | 52.29   | 76.91 | 77.88 | 53.66|65.18|
+[TODO]
 
 
-## Quick start: (Generalizing from art, cartoon, sketch to photo domain with ResNet-18)
+## Quick start: (Generalizing from photo domain to Rest(A,C,S) with ResNet-18)
 1. Install the required packages.
 2. Download PACS dataset.
 3. Execute the following code.
 ```
-bash run_main_PACS.sh
+bash run_main_PACS_sdg.sh
 ```
 
 ## Change dataset
@@ -28,4 +26,4 @@ You can simply uncomment it to start your own experiment. It may require hyper-p
 
 ## Modified Part
 We add Multi domain alignment with redundancy reduction for the sDG task. We observe significant increase in the sketch domain.
-
+-Download PACS dataset and save in this level as a separate folder named 'PACS'.
